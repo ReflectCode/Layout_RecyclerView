@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <view opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1002" contentMode="scaleToFill" horizontalHuggingPriority="200" id="RC-ID-1002" userLabel="RC-ID-1002">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" tag="1003" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="img" userLabel="img">
+                    <rect key="frame" x="4" y="4" width="398" height="200"/>
+                    <color key="backgroundColor" name="colorOrange"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="img-Height-Eq-200"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="accessibilityHint" value="Image"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1004-backView" userLabel="RC-ID-1004-backView">
+                    <rect key="frame" x="4" y="208" width="398" height="48"/>
+                    <color key="backgroundColor" name="colorLightBlue"/>
+                </imageView>
+                <view opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1004" contentMode="scaleToFill" horizontalHuggingPriority="200" id="RC-ID-1004" userLabel="RC-ID-1004">
+                    <rect key="frame" x="4" y="208" width="398" height="48"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1005" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Cell text" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="title" userLabel="title" customClass="RC_UILabel" customModule="GallarySample" customModuleProvider="target">
+                            <rect key="frame" x="122.66666666666669" y="14" width="63" height="19"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="63" id="title-Width-Eq-63"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <color key="textColor" name="colorAccent"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" tag="1006" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btnSelect" userLabel="btnSelect">
+                            <rect key="frame" x="185.66666666666666" y="0.0" width="87.999999999999972" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="btnSelect-Height-Eq-48"/>
+                                <constraint firstAttribute="width" constant="88" id="btnSelect-Width-Eq-88"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                            <state key="normal" title="Select" backgroundImage="RC_btn_default_normal">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="disabled" title="Select" backgroundImage="RC_btn_default_normal_disable">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" title="Select" backgroundImage="RC_btn_default_selected">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted" title="Select" backgroundImage="RC_btn_default_selected">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="colorLightBlue"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="RC-ID-1004-Height-Eq-48"/>
+                        <constraint firstAttribute="height" priority="200" constant="48" id="RC-ID-1004-Height-placeHolder"/>
+                        <constraint firstItem="btnSelect" firstAttribute="centerY" secondItem="RC-ID-1004" secondAttribute="centerY" id="btnSelect-centerY-RC-ID-1004" userLabel="btnSelect-centerY-RC-ID-1004"/>
+                        <constraint firstItem="btnSelect" firstAttribute="left" secondItem="title" secondAttribute="right" id="btnSelect-toRightOf-title" userLabel="btnSelect-toRightOf-title"/>
+                        <constraint firstItem="title" firstAttribute="centerX" secondItem="RC-ID-1004" secondAttribute="centerX" constant="-45" id="title-alignCenterHorizontal-inContainer" userLabel="title-alignCenterHorizontal-inContainer"/>
+                        <constraint firstItem="title" firstAttribute="centerY" secondItem="RC-ID-1004" secondAttribute="centerY" constant="-0.5" id="title-centerY-RC-ID-1004" userLabel="title-centerY-RC-ID-1004"/>
+                        <constraint firstItem="title" firstAttribute="bottom" secondItem="RC-ID-1004" secondAttribute="bottom" constant="-15" id="title-matchBottom-RC-ID-1004" userLabel="title-matchBottom-RC-ID-1004"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="colorPrimary"/>
+            <constraints>
+                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="260" id="RC-ID-1002-Height-Eq-260"/>
+                <constraint firstAttribute="height" priority="200" constant="260" id="RC-ID-1002-Height-placeHolder"/>
+                <constraint firstItem="RC-ID-1004" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="RC-ID-1002" secondAttribute="bottom" constant="-4" id="RC-ID-1004-Bottom-LessThan-RC-ID-1002-Bottom" userLabel="RC-ID-1004-Bottom-LessThan-RC-ID-1002-Bottom"/>
+                <constraint firstItem="RC-ID-1004-backView" firstAttribute="height" secondItem="RC-ID-1004" secondAttribute="height" id="RC-ID-1004-backView-matchHeight-RC-ID-1004"/>
+                <constraint firstItem="RC-ID-1004-backView" firstAttribute="leading" secondItem="RC-ID-1004" secondAttribute="leading" id="RC-ID-1004-backView-matchLeading-RC-ID-1004"/>
+                <constraint firstItem="RC-ID-1004-backView" firstAttribute="top" secondItem="RC-ID-1004" secondAttribute="top" id="RC-ID-1004-backView-matchTop-RC-ID-1004"/>
+                <constraint firstItem="RC-ID-1004-backView" firstAttribute="width" secondItem="RC-ID-1004" secondAttribute="width" id="RC-ID-1004-backView-matchWidth-RC-ID-1004"/>
+                <constraint firstItem="RC-ID-1004" firstAttribute="top" secondItem="img" secondAttribute="bottom" constant="4" id="RC-ID-1004-below-img" userLabel="RC-ID-1004-below-img"/>
+                <constraint firstItem="RC-ID-1004" firstAttribute="bottom" secondItem="RC-ID-1002" secondAttribute="bottom" priority="100" constant="-4" id="RC-ID-1004-bottom-max" userLabel="RC-ID-1004-bottom-max"/>
+                <constraint firstItem="RC-ID-1004" firstAttribute="leading" secondItem="RC-ID-1002" secondAttribute="leading" constant="4" id="RC-ID-1004-matchLeading-RC-ID-1002" userLabel="RC-ID-1004-matchLeading-RC-ID-1002"/>
+                <constraint firstItem="RC-ID-1004" firstAttribute="trailing" secondItem="RC-ID-1002" secondAttribute="trailing" constant="-4" id="RC-ID-1004-matchTrailing-RC-ID-1002" userLabel="RC-ID-1004-matchTrailing-RC-ID-1002"/>
+                <constraint firstItem="img" firstAttribute="leading" secondItem="RC-ID-1002" secondAttribute="leading" constant="4" id="img-leading-RC-ID-1002" userLabel="img-leading-RC-ID-1002"/>
+                <constraint firstItem="img" firstAttribute="trailing" secondItem="RC-ID-1002" secondAttribute="trailing" constant="-4" id="img-matchTrailing-RC-ID-1002" userLabel="img-matchTrailing-RC-ID-1002"/>
+                <constraint firstItem="img" firstAttribute="top" secondItem="RC-ID-1002" secondAttribute="top" constant="4" id="img-top-RC-ID-1002" userLabel="img-top-RC-ID-1002"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="RC-ID-1004-matchTrailing-RC-ID-1002"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="100" y="100"/>
+        </view>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+    </objects>
+    <resources>
+        <image name="RC_btn_default_normal" width="12" height="24"/>
+        <image name="RC_btn_default_normal_disable" width="12" height="24"/>
+        <image name="RC_btn_default_selected" width="12" height="24"/>
+        <namedColor name="colorAccent">
+            <color red="1" green="0.25098039215686274" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorLightBlue">
+            <color red="0.66666666666666663" green="0.66666666666666663" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorOrange">
+            <color red="1" green="0.40000000000000002" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorPrimary">
+            <color red="0.24705882352941178" green="0.31764705882352939" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

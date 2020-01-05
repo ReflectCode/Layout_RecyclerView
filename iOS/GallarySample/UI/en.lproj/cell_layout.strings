@@ -1,0 +1,16 @@
+
+
+/* Class = "UILabel" text="Cell text" ObjectID = "title" */
+"title.text" = "Cell text";
+
+/* Class = "UIButton" normalTitle="Select" ObjectID = "btnSelect" */
+"btnSelect.normalTitle" = "Select";
+
+/* Class = "UIButton" disabledTitle="Select" ObjectID = "btnSelect" */
+"btnSelect.disabledTitle" = "Select";
+
+/* Class = "UIButton" selectedTitle="Select" ObjectID = "btnSelect" */
+"btnSelect.selectedTitle" = "Select";
+
+/* Class = "UIButton" highlightedTitle="Select" ObjectID = "btnSelect" */
+"btnSelect.highlightedTitle" = "Select";
