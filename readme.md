@@ -46,26 +46,20 @@ This repository contains the Android source code which was used as input and gen
 
 ## Dev Notes
 
-* Credits for Android project - http://www.androidauthority.com/how-to-build-an-image-gallery-app-718976/
 
-* **RecyclerView**
+* **RecyclerView** - For RecyclerView on iOS side 'UICollectionView' is used. The 'cell_layout.xml' from android project is ported to xib file and used as layout for the 'UICollectionViewCell'
+To handle button tap event addTarget() is used. UILabel and UIImageView do not have addTarget(), for these controls 'UITapGestureRecognizer' is assigned.
 
-For RecyclerView on iOS side 'UICollectionView' is used. The 'cell_layout.xml' from android project is ported to xib file and used as layout for the 'UICollectionViewCell'
-To handle button tap event addTarget() is used. UILabel and UIImageView do not have addTarget(), for these controls 'UITapGestureRecognizer' is assigned
+* **Snackbar** - We were not able to identify suitable library which provides this functionality. Therefore swift implementation of android 'Snackbar' control is provided using custom lib 'RC_Snackbar.swift' developed by ReflectCode.
 
-* **Snackbar**
+* **Toast** - Swift implementation of android 'Toast' control is provided using custom lib 'RC_toast.swift' developed by ReflectCode.
 
-Swift implementation of android 'Snackbar' control is provided using custom lib 'RC_Snackbar.swift' developed by ReflectCode
-
-* **Toast**
-
-Swift implementation of android 'Toast' control is provided using custom lib 'RC_toast.swift' developed by ReflectCode
-
-* **Resources**
-
-During compilation Android creates R.java providing good type-safety. 
+* **Resources** - During compilation Android creates R.java providing good type-safety. 
 Taking inspiration from [R.swift lib](https://github.com/mac-cain13/R.swift), RC generates 'R.swift' file which provide type-safe access to all the resources.
-To access the resources 'RC_GetResources.swift' provides various methods which are inlined with android 'Resources' class
+To access the resources 'RC_GetResources.swift' provides various methods which are inlined with android 'Resources' class.
+
+
+### Credits for Android project - http://www.androidauthority.com/how-to-build-an-image-gallery-app-718976/
 
 
 ## Screen shots
