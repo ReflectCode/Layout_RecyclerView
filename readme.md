@@ -48,31 +48,42 @@ This repository contains the Android source code which was used as input and gen
 
 * Credits for Android project - http://www.androidauthority.com/how-to-build-an-image-gallery-app-718976/
 
-* RecyclerView
+* **RecyclerView**
+
 For RecyclerView on iOS side 'UICollectionView' is used. The 'cell_layout.xml' from android project is ported to xib file and used as layout for the 'UICollectionViewCell'
 To handle button tap event addTarget() is used. UILabel and UIImageView do not have addTarget(), for these controls 'UITapGestureRecognizer' is assigned
 
-* Snackbar
+* **Snackbar**
+
 Swift implementation of android 'Snackbar' control is provided using custom lib 'RC_Snackbar.swift' developed by ReflectCode
 
-* Toast
+* **Toast**
+
 Swift implementation of android 'Toast' control is provided using custom lib 'RC_toast.swift' developed by ReflectCode
 
-* Resources
+* **Resources**
+
 During compilation Android creates R.java providing good type-safety. 
-Taking inspiration from 'https://github.com/mac-cain13/R.swift', RC generates 'R.swift' file which provide type-safe access to all the resources.
+Taking inspiration from [R.swift lib](https://github.com/mac-cain13/R.swift), RC generates 'R.swift' file which provide type-safe access to all the resources.
 To access the resources 'RC_GetResources.swift' provides various methods which are inlined with android 'Resources' class
 
 
 ## Screen shots
 
 <img src="/Visuals/Side-by-Side-Small.gif" alt="Side-by-Side-Video"/>
+
 -----
+
 <img src="/Visuals/ScreenShot-01.png" alt="ScreenShot-01"/>
+
 -----
+
 <img src="/Visuals/ScreenShot-02.png" alt="ScreenShot-02"/>
+
 -----
+
 <img src="/Visuals/ScreenShot-03.png" alt="ScreenShot-03"/>
+
 -----
 
 
