@@ -17,8 +17,10 @@
 
 
 -----
-# RecyclerView + Toast + Snackbar + R.java (Resources)
-This project demonstrates the conversion of RecyclerView Layout to iOS UICollectionView.
+# Gallery Demo
+This project demonstrates the conversion of Gallery demo. RecyclerView is ported to UICollectionView.
+Along with this Toast, Snackbar and android resource class.
+
 This repository contains the Android source code which was used as input and generated iOS source code project.
  
 | Class | Package |
@@ -47,7 +49,7 @@ This repository contains the Android source code which was used as input and gen
 ## Dev Notes
 
 
-* **RecyclerView** - For RecyclerView on iOS side 'UICollectionView' is used. The 'cell_layout.xml' from android project is ported to xib file and used as layout for the 'UICollectionViewCell'
+* **RecyclerView** - The RecyclerView on iOS is ported to 'UICollectionView' is used. The 'cell_layout.xml' from android project is ported to xib file and used as layout for the 'UICollectionViewCell'
 To handle button tap event addTarget() is used. UILabel and UIImageView do not have addTarget(), for these controls 'UITapGestureRecognizer' is assigned.
 
 * **Snackbar** - We were not able to identify suitable library which provides this functionality. Therefore swift implementation of android 'Snackbar' control is provided using custom lib 'RC_Snackbar.swift' developed by ReflectCode.
@@ -59,7 +61,7 @@ Taking inspiration from [R.swift lib](https://github.com/mac-cain13/R.swift), RC
 To access the resources 'RC_GetResources.swift' provides various methods which are inlined with android 'Resources' class.
 
 
-### Credits for Android project - http://www.androidauthority.com/how-to-build-an-image-gallery-app-718976/
+Credits for Android project - http://www.androidauthority.com/how-to-build-an-image-gallery-app-718976/
 
 
 ## Screen shots
