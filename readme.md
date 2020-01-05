@@ -49,8 +49,7 @@ This repository contains the Android source code which was used as input and gen
 ## Dev Notes
 
 
-* **RecyclerView** - The RecyclerView on iOS is ported to 'UICollectionView' is used. The 'cell_layout.xml' from android project is ported to xib file and used as layout for the 'UICollectionViewCell'
-To handle button tap event addTarget() is used. UILabel and UIImageView do not have addTarget(), for these controls 'UITapGestureRecognizer' is assigned.
+* **RecyclerView** - The RecyclerView on iOS is ported to 'UICollectionView' is used. The 'cell_layout.xml' from android project is ported to xib file and used as layout for the 'UICollectionViewCell'. To handle button tap event addTarget() is used. UILabel and UIImageView do not have addTarget(), for these controls 'UITapGestureRecognizer' is assigned.
 
 * **Snackbar** - We were not able to identify suitable library which provides this functionality. Therefore swift implementation of android 'Snackbar' control is provided using custom lib 'RC_Snackbar.swift' developed by ReflectCode.
 
