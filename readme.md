@@ -19,7 +19,7 @@
 -----
 # Gallery Demo
 This project demonstrates the conversion of Gallery demo. RecyclerView is ported to UICollectionView.
-Along with this Toast, Snackbar and android resource class.
+Along with this this project also shows how android Toast, Snackbar and android resource class gets ported to iOS.
 
 This repository contains the Android source code which was used as input and generated iOS source code project.
  
